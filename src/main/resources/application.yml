@@ -1,0 +1,14 @@
+eureka:
+    client:
+        service-url:
+            default-zone: http://localhost:8761/
+server:
+    port: 8888
+spring:
+    application:
+        name: configserver
+    cloud:
+        config:
+            server:
+                git:
+                    uri: file://e:\programowanie\cloud\config-repo\
